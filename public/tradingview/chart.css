@@ -74,6 +74,25 @@ div[data-section-name='extendLeftTradingLine'] {
 
 
 .theme-dark:root {
-    --tv-color-platform-background: #16141c;
-    --tv-color-pane-background: #16141c;
+    --tv-color-platform-background: #0A0A0A;
+    --tv-color-pane-background: #0A0A0A;
+}
+
+/* ========================================
+   HIDE ORDERLY EXCHANGE NAME FROM CHART
+   ======================================== */
+
+/* Hide the exchange title (Orderly) and its dot separator */
+div[class*="exchangeTitle"] {
+    display: none !important;
+}
+
+/* ========================================
+   DEGEN JONES CUSTOM THEME
+   ======================================== */
+
+/* Green profit / Pink loss colors */
+.theme-dark:root {
+    --up: #00ff66 !important;
+    --down: #f5428a !important;
 }
